@@ -11,7 +11,10 @@ find ./{directory} -name "_256x256_{name}*" -exec mv {} ./avi{directory} \;
 ```shell script
 for file in *.avi
 do
-    DIR="../data/${file%.*}"
-    mkdir "$DIR"
+  DIR="../data/${file%.*}"
+  mkdir "$DIR"
+  ffmpeg -i "${file%.*}.avi" "../data/${file%.*}/${file%.*}%05d.jpg"
 done
+
 ```
+
