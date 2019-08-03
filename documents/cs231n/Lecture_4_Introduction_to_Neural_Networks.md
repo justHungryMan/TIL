@@ -73,7 +73,7 @@ Gradient = local gradient * upstream gradient
 ![Slide](https://paper-attachments.dropbox.com/s_429671905378490AA53E5840D38CA0EB86760F5105C3FCAEBABF7F79EEFA321A_1564124274860_+2019-07-26++3.57.51.png)
 
 
-위의 슬라이드는 vectorize 된 식을 back propation 을 적용한 방법이다.
+위의 슬라이드는 vectorize 된 식을 back propagation 을 적용한 방법이다.
 조금 의문이 가는 것은 dW 와 dx를 구할 때 df/dq를 곱하는 과정에서 행렬의 순서를 어떻게 정하는지 잘 모르겠다.
 ~~추측으로는 q_k 와 W_{k,i} 와 관련 있을 것 같은데..~~
 우선 이건 자코비안을 제대로 공부하면 알 것 같고 이렇게 넘어가자.
