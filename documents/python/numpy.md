@@ -1,12 +1,12 @@
 # Numpy
 
-### 리스트에서 i번째 제외하고 합치기 (오른쪽에)
+### 리스트에서 i번째 제외하고 합치기 (아래쪽에)
 
 ```python
 np.vstack(X_train_folds[:i] + X_train_folds[i + 1 :])
 ```
 
-### 리스트에서 i번째 제외하고 합치기 (아래쪽에)
+### 리스트에서 i번째 제외하고 합치기 (오른쪽에)
 
 ```python
 np.hstack(Y_train_folds[:i] + Y_train_folds[i + 1:])
