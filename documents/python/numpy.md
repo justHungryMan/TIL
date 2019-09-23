@@ -38,3 +38,10 @@ closest_y = self.y_train[index]
 counts = np.bincount(closest_y)
 y_pred[i] = np.argmax(counts)
 ```
+
+### arrange
+```python
+>>> a = np.array([[1,2,3], [4,5,6], [7,8,9]])
+>>> a[np.arange(len(a)), [1,0,2]]
+array([2, 4, 9])
+```

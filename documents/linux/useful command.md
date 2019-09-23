@@ -17,4 +17,13 @@ do
 done
 
 ```
+3. 현재 위치에서 디렉토리 즉 폴더 개수 세기
+```shell script
+ls -l | grep ^d | wc -l
+```
+
+4. 파일 원하는 갯수 이동
+```shell script
+ls | head -28440 | xargs -i mv ./"{}" /workspace/data2/
+```
 
