@@ -55,7 +55,7 @@ SGD 를 이용할때 minibatches 를 이용하기 때문에 노이즈도 많이 
     for t in range(num_iterations):
       dx = compute_gradient(x)
       first_moment = beta1 * first_moment + (1 - beta1) * dx
-      second_moment = beta2 * second_moment + (1 - beta20 * dx * dx
+      second_moment = beta2 * second_moment + (1 - beta2) * dx * dx
       first_unbias = first_moment / (1 - beta1 ** t) # Bias correction
       second_unbias = second_moment / (1 - beta2 ** t)
       x -= learning_rate * first_unbias / (np.sqrt(second_unbias) + 1e - 7))
